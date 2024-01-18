@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: odh-ml-pipelines-scheduledworkflow
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-scheduledworkflow@sha256:eee1e6966d1d104c479482a14bd3f209f064fde0ed9dc293016a2f202826300b
         name: my-go
         ports:
         - containerPort: 8081
