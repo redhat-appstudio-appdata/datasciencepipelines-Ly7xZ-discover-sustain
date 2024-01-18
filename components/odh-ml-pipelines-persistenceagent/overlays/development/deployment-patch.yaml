@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-ml-pipelines-persistenceagent
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-persistenceagent@sha256:5d4fd699f31ca24e7400dea449ae71e784703156949e0306d93f39ec823d9d20
+        name: my-go
+        resources: {}
+status: {}
