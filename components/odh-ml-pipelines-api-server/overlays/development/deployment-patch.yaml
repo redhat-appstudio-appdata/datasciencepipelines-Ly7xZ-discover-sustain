@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-ml-pipelines-api-server
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-api-server@sha256:87f162febf9098f2b35da19289304b2663f0b80f928ceedb2d68df8ba5544d4a
+        name: my-go
+        resources: {}
+status: {}
