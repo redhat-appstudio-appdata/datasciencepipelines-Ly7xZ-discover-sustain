@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-ml-pipelines-artifact-manager
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-artifact-manager@sha256:b8e8b96c6ea51aabe8ce46b326e522781a7184c31c08a20f97f6431058a774de
+        name: my-go
+        resources: {}
+status: {}
