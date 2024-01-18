@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: odh-ml-pipelines-scheduledworkflow
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: odh-ml-pipelines-scheduledworkflow
+    app.kubernetes.io/part-of: datasciencepipelines
+  name: odh-ml-pipelines-schedulegie4
+spec:
+  path: /
+  port:
+    targetPort: 8888
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: odh-ml-pipelines-scheduledworkflow
+    weight: null
+status: {}

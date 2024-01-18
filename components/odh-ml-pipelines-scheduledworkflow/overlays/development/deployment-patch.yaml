@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-ml-pipelines-scheduledworkflow
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-scheduledworkflow@sha256:eee1e6966d1d104c479482a14bd3f209f064fde0ed9dc293016a2f202826300b
+        name: my-go
+        resources: {}
+status: {}
