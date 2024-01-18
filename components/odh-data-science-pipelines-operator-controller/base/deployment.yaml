@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: odh-data-science-pipelines-operator-controller
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-data-science-pipelines-operator-controller@sha256:955433df0ab6be06f0c0c1a975223389a268908129d1ff0caa2b0c4c3ba2e731
         imagePullPolicy: Always
         name: container-image
         ports:
