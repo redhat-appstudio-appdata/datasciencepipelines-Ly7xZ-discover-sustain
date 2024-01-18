@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: odh-ml-pipelines-cache
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/datasciencepipelines/odh-ml-pipelines-cache@sha256:9cd044f654ec122f0a973e3865e4c9280066c27c50b7f67dde2e3bd416b7d619
         name: my-go
         ports:
         - containerPort: 8081
