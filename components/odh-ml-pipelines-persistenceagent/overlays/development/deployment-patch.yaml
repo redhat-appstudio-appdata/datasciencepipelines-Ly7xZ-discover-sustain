@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: odh-ml-pipelines-persistenceagent
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
